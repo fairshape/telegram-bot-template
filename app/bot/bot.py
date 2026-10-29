@@ -14,6 +14,7 @@ from app.infrastructure.database.session import create_engine, create_session_ma
 from config.config import Config
 from app.bot.handlers.admin import admin_router
 from app.bot.handlers.user import user_router
+from app.bot.handlers.settings import settings_router
 from app.bot.i18n.translator import TranslatorHub
 
 logger = logging.getLogger(__name__)
@@ -48,7 +49,7 @@ async def main(config: Config) -> None:
     session_maker = create_session_maker(engine)
 
     logger.info("Including routers...")
-    dp.include_routers(admin_router, user_router)
+    dp.include_routers(admin_router, user_router, settings_router)
 
     logger.info("Including middlewares...")
     dp.update.outer_middleware(DataBaseMiddleware())

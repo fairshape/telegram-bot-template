@@ -13,6 +13,7 @@ help =
 start_description = Запустить бота
 ban_description = Заблокировать пользователя
 unban_description = Разблокировать пользователя
+lang-description = Поменять язык
 
 empty_ban_answer =
     ⚠️ <b>Не указан ID пользователя</b>
@@ -30,3 +31,8 @@ not_banned = ℹ️ Этот пользователь <b>не заблокиро
 
 successfully_banned = ✅ Пользователь <b>успешно заблокирован</b>.
 successfully_unbanned = ✅ Пользователь <b>успешно разблокирован</b>.
+
+err-need-start = Нажмите /start
+lang-name = 🇷🇺 Русский
+lang-choose = Выберите язык:
+lang-changed = Язык изменён на русский ✅

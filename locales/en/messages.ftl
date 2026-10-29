@@ -13,6 +13,7 @@ help =
 start_description = Start the bot
 ban_description = Ban a user
 unban_description = Unban a user
+lang-description = Change the language
 
 empty_ban_answer =
     ⚠️ <b>User ID is missing</b>
@@ -30,3 +31,8 @@ not_banned = ℹ️ This user is <b>not banned</b>.
 
 successfully_banned = ✅ User has been <b>successfully banned</b>.
 successfully_unbanned = ✅ User has been <b>successfully unbanned</b>.
+
+err-need-start = Нажмите /start
+lang-name = 🇬🇧 English
+lang-choose = Choose your language:
+lang-changed = Language changed to English ✅

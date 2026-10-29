@@ -12,6 +12,10 @@ def get_main_menu_commands(
             command='/start',
             description=i18n.get('start_description')
         ),
+        BotCommand(
+            command="/lang",
+            description=i18n.get('lang-description')
+        )
     ]
 
     if role == UserRole.ADMIN:

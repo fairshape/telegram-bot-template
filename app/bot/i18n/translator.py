@@ -5,7 +5,6 @@ from fluent.runtime import FluentBundle, FluentResource
 
 logger = logging.getLogger(__name__)
 
-# translator.py -> i18n -> bot -> app -> корень проекта
 LOCALES_DIR = Path(__file__).resolve().parents[3] / "locales"
 DEFAULT_LOCALE = "ru"
 
